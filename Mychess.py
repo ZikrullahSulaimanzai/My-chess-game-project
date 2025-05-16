@@ -94,7 +94,7 @@ def highlight_squares(squares, color):
         surface.fill((*color, 100))  # Transparent fill
         screen.blit(surface, (col * SQUARE_SIZE, row * SQUARE_SIZE))
 
-# Convert mouse position to board coordinates
+# Convert mouse position to board coordinates(which square the player clicked on.)
 def get_square_from_mouse(pos):
     x, y = pos
     return y // SQUARE_SIZE, x // SQUARE_SIZE
